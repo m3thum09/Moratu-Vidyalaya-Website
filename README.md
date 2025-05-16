@@ -19,15 +19,15 @@ The aim was to design and implement a school website that serves as an informati
 
 ## 📂 Folder Structure
 
-index.html
-style.css
-script.js
-/Images/
-├── B-Mandiraya.jpg
-├── principal.jpg
-├── gallery1.jpg
-├── logo-removebg-preview.png
-└── ...other images
+├── index.html                
+├── style.css                
+├── script.js                 
+└── Images/                  
+    ├── B-Mandiraya.jpg
+    ├── principal.jpg
+    ├── gallery1.jpg
+    ├── logo-removebg-preview.png
+    └── ...other images
 
 ---
 
