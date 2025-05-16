@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moratu Maha Vidyalaya</title>
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero position-relative vh-100">
+      <!-- Background Image -->
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      
+      <!-- Navigation -->
+      <header id="mainHeader" class="fixed-top d-flex justify-content-between align-items-center p-4">
+        <button class="btn btn-icon text-white" id="searchBtn" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        </button>
+        
+        <div class="logo-container position-absolute start-50 translate-middle-x">
+          <a href="index.html">
+            <img src="Images/logo-removebg-preview.png" alt="School Logo" class="logo" width="100">
+          </a>
+        </div>
+        
+        <button class="btn btn-icon text-white" id="menuToggle" aria-label="Toggle Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon d-none"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+      </header>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav d-flex flex-column align-items-center">
+          <a href="index.html" class="mobile-nav-item">Home</a>
+          <a href="about.html" class="mobile-nav-item">About Us</a>
+          <a href="admissions.html" class="mobile-nav-item">Admissions</a>
+          <a href="academics.html" class="mobile-nav-item">Academics</a>
+          <a href="news.html" class="mobile-nav-item">News & Events</a>
+          <a href="alumni.html" class="mobile-nav-item">Alumni</a>
+          <a href="contact.html" class="mobile-nav-item">Contact</a>
+        </nav>
+      </div>
+      
+      <!-- Hero Content -->
+      <div class="hero-content position-relative z-index-1 text-center text-white px-4 d-flex flex-column align-items-center justify-content-center h-100">
+        <h2 class="hero-subtitle animate-fade-in">Welcome to</h2>
+        <h1 class="hero-title animate-fade-in animation-delay-200">Moratu Maha Vidyalaya</h1>
+        
+        <!-- Navigation Buttons -->
+        <div class="hero-buttons d-flex flex-wrap justify-content-center gap-3 mt-4 animate-fade-in animation-delay-400">
+          <a href="about.html" class="btn btn-outline-light btn-hover-fill">About Us</a>
+          <a href="admissions.html" class="btn btn-outline-light btn-hover-fill">Admissions</a>
+          <a href="academics.html" class="btn btn-outline-light btn-hover-fill">Academics</a>
+          <a href="news.html" class="btn btn-outline-light btn-hover-fill">News & Events</a>
+        </div>
+      </div>
+      
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+      </div>
+    </section>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner bg-dark text-white py-3 text-center animate-on-scroll">
+      <div class="container">
+        <p class="mb-0"><span class="fw-bold">Latest Announcement:</span> Annual Prize Giving Ceremony - May 15, 2025
+          <a href="news/prize-giving.html" class="ms-2 announcement-link">Learn More</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="py-5">
+      <div class="container py-3">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h2 class="section-title mb-4 animate-on-scroll">Our Heritage</h2>
+            <p class="text-muted mb-4 animate-on-scroll animation-delay-100">
+              Moratu Maha Vidyalaya is one of the oldest and most prestigious educational institutions, with a rich history
+              dating back to its establishment. The college has maintained its tradition of excellence while adapting to
+              modern educational needs.
+            </p>
+            <p class="text-muted mb-4 animate-on-scroll animation-delay-200">
+              Our mission is to provide a holistic education that nurtures academic excellence, character development,
+              and leadership skills in our students.
+            </p>
+            <a href="about.html" class="btn btn-dark btn-hover-fill animation-delay-300">Learn More</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-hover-zoom rounded overflow-hidden animate-on-scroll">
+              <img src="images/B-Mandiraya2.jpg" alt="B-Mandiraya Building" class="img-fluid w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="py-5 bg-dark text-white">
+      <div class="container py-3">
+        <h2 class="section-title text-center mb-5 animate-on-scroll">Quick Links</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+          <div class="col animate-on-scroll">
+            <a href="admissions.html" class="quick-link-card">
+              <div class="quick-link-icon">👨‍🎓</div>
+              <div class="quick-link-title">Admissions</div>
+            </a>
+          </div>
+          <div class="col animate-on-scroll animation-delay-100">
+            <a href="calendar.html" class="quick-link-card">
+              <div class="quick-link-icon">📅</div>
+              <div class="quick-link-title">Academic Calendar</div>
+            </a>
+          </div>
+          <div class="col animate-on-scroll animation-delay-200">
+            <a href="sports.html" class="quick-link-card">
+              <div class="quick-link-icon">🏆</div>
+              <div class="quick-link-title">Sports</div>
+            </a>
+          </div>
+          <div class="col animate-on-scroll animation-delay-300">
+            <a href="library.html" class="quick-link-card">
+              <div class="quick-link-icon">📚</div>
+              <div class="quick-link-title">Library</div>
+            </a>
+          </div>
+          <div class="col animate-on-scroll animation-delay-400">
+            <a href="alumni.html" class="quick-link-card">
+              <div class="quick-link-icon">👥</div>
+              <div class="quick-link-title">Alumni</div>
+            </a>
+          </div>
+          <div class="col animate-on-scroll animation-delay-500">
+            <a href="facilities.html" class="quick-link-card">
+              <div class="quick-link-icon">🏫</div>
+              <div class="quick-link-title">Facilities</div>
+            </a>
+          </div>
+          <div class="col animate-on-scroll animation-delay-600">
+            <a href="achievements.html" class="quick-link-card">
+              <div class="quick-link-icon">🏅</div>
+              <div class="quick-link-title">Achievements</div>
+            </a>
+          </div>
+          <div class="col animate-on-scroll animation-delay-700">
+            <a href="contact.html" class="quick-link-card">
+              <div class="quick-link-icon">📞</div>
+              <div class="quick-link-title">Contact Us</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section class="py-5 bg-light">
+      <div class="container py-3">
+        <h2 class="section-title text-center mb-5 animate-on-scroll">Latest News & Events</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- News Card 1 -->
+          <div class="col animate-on-scroll">
+            <div class="card h-100 news-card">
+              <div class="news-image-container">
+                <img src="images/news-1.jpg" class="card-img-top" alt="College Annual Sports Meet">
+              </div>
+              <div class="card-body">
+                <p class="text-muted small mb-2">April 18, 2025</p>
+                <h5 class="card-title">College Annual Sports Meet</h5>
+                <p class="card-text">The annual sports meet will be held at the college grounds with participation from all houses.</p>
+                <a href="news/sports-meet.html" class="news-link">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- News Card 2 -->
+          <div class="col animate-on-scroll animation-delay-100">
+            <div class="card h-100 news-card">
+              <div class="news-image-container">
+                <img src="images/news-2.jpg" class="card-img-top" alt="Science Exhibition 2025">
+              </div>
+              <div class="card-body">
+                <p class="text-muted small mb-2">May 5, 2025</p>
+                <h5 class="card-title">Science Exhibition 2025</h5>
+                <p class="card-text">Students showcase their innovative science projects at the annual science exhibition.</p>
+                <a href="news/science-exhibition.html" class="news-link">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- News Card 3 -->
+          <div class="col animate-on-scroll animation-delay-200">
+            <div class="card h-100 news-card">
+              <div class="news-image-container">
+                <img src="images/news-3.jpg" class="card-img-top" alt="Alumni Reunion Dinner">
+              </div>
+              <div class="card-body">
+                <p class="text-muted small mb-2">June 12, 2025</p>
+                <h5 class="card-title">Alumni Reunion Dinner</h5>
+                <p class="card-text">Join us for the annual alumni reunion dinner celebrating the class of 2000.</p>
+                <a href="news/alumni-reunion.html" class="news-link">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5 animate-on-scroll">
+          <a href="news.html" class="btn btn-dark btn-hover-fill animation-delay-300">View All News</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+      <div class="container py-3">
+        <h2 class="section-title text-center mb-5 animate-on-scroll">Alumni Testimonials</h2>
+        <div class="row g-4">
+          <!-- Testimonial 1 -->
+          <div class="col-md-6 animate-on-scroll slide-from-left">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">My years at Moratu Maha Vidyalaya shaped me into who I am today. The values and education I received continue to guide me in my professional life.</p>
+              <div class="testimonial-author">
+                <p class="testimonial-name">Dr. James Wilson</p>
+                <p class="testimonial-position">Cardiologist, Class of 2000</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="col-md-6 animate-on-scroll slide-from-right">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">Moratu Maha Vidyalaya provided me with not just academic knowledge but also life skills that have been invaluable throughout my career in technology.</p>
+              <div class="testimonial-author">
+                <p class="testimonial-name">Michael Thompson</p>
+                <p class="testimonial-position">Software Engineer, Class of 2010</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="py-5 bg-light">
+      <div class="container py-3">
+        <h2 class="section-title text-center mb-5 animate-on-scroll">Special Event's Gallery</h2>
+        <div class="row g-3">
+          <div class="col-6 col-md-3 animate-on-scroll">
+            <div class="gallery-item">
+              <img src="images/principale.jpg" alt="Gallery image 1" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animate-on-scroll animation-delay-100">
+            <div class="gallery-item">
+              <img src="images/OLExam.jpeg" alt="Gallery image 2" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animate-on-scroll animation-delay-200">
+            <div class="gallery-item">
+              <img src="images/WorldOceanDay.jpeg" alt="Gallery image 3" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animate-on-scroll animation-delay-300">
+            <div class="gallery-item">
+              <img src="images/scoremin.jpg" alt="Gallery image 4" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animate-on-scroll animation-delay-400">
+            <div class="gallery-item">
+              <img src="images/mmbumin.jpg" alt="Gallery image 5" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animate-on-scroll animation-delay-500">
+            <div class="gallery-item">
+              <img src="images/MORAPARADE2025.webp" alt="Gallery image 6" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animate-on-scroll animation-delay-600">
+            <div class="gallery-item">
+              <img src="images/yearofExcellence.jpeg" alt="Gallery image 7" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6 col-md-3 animate-on-scroll animation-delay-700">
+            <div class="gallery-item">
+              <img src="images/battleofthegolds.jpeg" alt="Gallery image 8" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4 animate-on-scroll">
+          <a href="gallery.html" class="btn btn-dark btn-hover-fill animation-delay-300">View Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Column 1 -->
+          <div class="col-md-6 col-lg-3 animate-on-scroll">
+            <h3 class="footer-title">Moratu Maha Vidyalaya</h3>
+            <p class="text-muted">Providing excellence in education since establishment.</p>
+            <div class="mt-3">
+              <img src="images/logo-removebg-preview.png" alt="School Logo" width="100">
+            </div>
+          </div>
+          
+          <!-- Column 2 -->
+          <div class="col-md-6 col-lg-3 animate-on-scroll animation-delay-100">
+            <h4 class="footer-subtitle">Quick Links</h4>
+            <ul class="list-unstyled footer-links">
+              <li>
+                <a href="about.html" class="footer-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="admissions.html" class="footer-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  Admissions
+                </a>
+              </li>
+              <li>
+                <a href="academics.html" class="footer-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  Academics
+                </a>
+              </li>
+              <li>
+                <a href="news.html" class="footer-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  News & Events
+                </a>
+              </li>
+              <li>
+                <a href="alumni.html" class="footer-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  Alumni
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Column 3 -->
+          <div class="col-md-6 col-lg-3 animate-on-scroll animation-delay-200">
+            <h4 class="footer-subtitle">Contact Us</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.9520680678254!2d79.88826734949032!3d6.781520393855723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24505f1db0b39%3A0xc25d3501052a727c!2z4La44Lec4La74Lan4LeU4LeAIOC2uOC3hOC3jyDgt4Dgt5Lgtq_gt4rigI3gtrrgt4_gtr3gtrogKCDgtqLgt4_gtq3gt5Lgtpog4La04LeP4LeD4La9ICkgLSBNb3JhdHV3YSBNYWhhIFZpZHlhbGF5YSAoIE5hdGlvbmFsIFNjaG9vbCAp!5e0!3m2!1sen!2slk!4v1746110628378!5m2!1sen!2slk" 
+            style="width: 100%; height: 150px; border: 0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>            
+            <address class="text-muted mb-0">
+              Pieris Mawatha,<br>
+              Moratuwa<br>
+              Sri Lanka<br><br>
+              Phone: +94 11 2645391<br>
+              Email: info@moratumahavidyalaya.lk 
+            </address>
+          </div>
+          
+          <!-- Column 4 -->
+          <div class="col-md-6 col-lg-3 animate-on-scroll animation-delay-300">
+            <h4 class="footer-subtitle">Connect With Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="mt-4">
+              <h4 class="footer-subtitle">Newsletter</h4>
+              <form class="newsletter-form">
+                <div class="input-group"> 
+                  <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" required>
+                  <button class="btn btn-secondary animation-delay-300" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border-top border-secondary mt-4 pt-4 text-center text-muted animate-on-scroll">
+          <p>©<span id="currentYear"></span> Moratu Maha Vidyalaya. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
