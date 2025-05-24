@@ -56,8 +56,6 @@ The aim was to design and implement a school website that serves as an informati
 ---
 
 ## ✅ Live Preview
-
-If hosted via GitHub Pages:  
 [🔗 View Website](https://m3thum09.github.io/Moratu-Vidyalaya-Website/)
 
 ---
